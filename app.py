@@ -60,6 +60,7 @@ with tab1:
     else:
         df_show6 = filtered_df.rename(columns={'order_date':'日期','sales_amount':'销售额'})
         df_show6['销售额'] = df_show6['销售额']/10000
+        df_show6['日期'] = df_show6['日期'].dt.strftime('%Y-%m-%d')
         fig = px.line(df_show6, x="日期", y="销售额")
         df_show6 = df_show6[['日期','销售额']]
         st.plotly_chart(fig)
