@@ -7,7 +7,7 @@
 
 ## 在线访问
 
-> 部署后在此填写 Streamlit Cloud 链接
+> https://ecommerce-dashboard-mszy.streamlit.app/
 
 ## 功能模块
 
